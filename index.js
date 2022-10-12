@@ -1,3 +1,14 @@
+
+//Segundo Desafio de Coder --Manejo de Archivos en JavaScript--
+
+
+const fs = require('fs');
+
+const data = fs.readFileSync('./productos.txt' , 'utf-8');
+console.log(data)
+
+
+
 class Contenedor {
     constructor(fileName) {
         this.fileName = fileName;
