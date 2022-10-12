@@ -1,0 +1,19 @@
+{
+  "name": "coder",
+  "version": "1.0.0",
+  "description": "desafios de coder back end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddipietro/CoderBackEnd.git"
+  },
+  "author": "Erika Di Pietro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eddipietro/CoderBackEnd/issues"
+  },
+  "homepage": "https://github.com/eddipietro/CoderBackEnd#readme"
+}
