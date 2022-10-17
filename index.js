@@ -3,6 +3,7 @@
 
 
 const fs = require('fs');
+require('dotenv').config()
 
 const data = fs.readFileSync('./productos.txt' , 'utf-8');
 console.log(data)

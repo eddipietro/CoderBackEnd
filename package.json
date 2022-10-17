@@ -4,7 +4,9 @@
   "description": "desafios de coder back end",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "start:dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/eddipietro/CoderBackEnd/issues"
   },
-  "homepage": "https://github.com/eddipietro/CoderBackEnd#readme"
+  "homepage": "https://github.com/eddipietro/CoderBackEnd#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
 }
