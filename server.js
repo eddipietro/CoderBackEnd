@@ -33,17 +33,26 @@ server.listen(PORT, () => {
 
 //--------------------
 
-const index = require('./index.js');
+const index = require('./index');
+require('dotenv').config()
 
 const express = require('express');
 
-const PORT =process.env.PORT
+const PORT = process.env.PORT || 3000
 
 const app = express();
 const server = app.listen(process.env.PORT || PORT, () => console.log(`Server listening on PORT ${PORT}`));
 server.on('error', err => console.log(`Error: ${err}`));
 
 const productos = new index('productos.txt');
+
+
+
+app.get('/', (_req, res)   => {
+
+    res.send ("Hola Mundo")
+    
+    })
 
 app.get('/productos', async (_req, res) => {
     const mostrarProductos = await productos.getAll();
@@ -55,3 +64,4 @@ app.get('/productoRandom', async (_req, res) => {
     const numeroRandom = Math.floor(Math.random() * p.length);
     res.send(p[numeroRandom]);
 })
+
